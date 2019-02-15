@@ -1,6 +1,11 @@
 
     <?php
-      $date = date('d-m-y');
+      // $date = date('d-m-y');
+
+      date_default_timezone_set('Asia/Jakarta');
+       $date = date('d-m-y');
+
+
       ?>
 
       <!-- Small boxes (Stat box) -->
@@ -26,7 +31,7 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3><?php echo JumlahDataUser($mysqli,"presensi", "jenis_presensi='Berangkat'"); ?></h3>
+              <h3><?php echo JumlahData($mysqli,"alpha"); ?></h3>
 
               <p>Riwayat karyawan alpha</p>
             </div>

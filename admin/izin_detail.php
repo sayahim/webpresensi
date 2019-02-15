@@ -2,15 +2,13 @@
 if (isset($_GET['id'])){
     $kode=$_GET['id'];
 
-    $query="SELECT * from izin join karyawan on karyawan.id_karyawan = izin.id_karyawan";
+    $query="SELECT * from izin join karyawan on karyawan.id_karyawan = izin.id_karyawan where izin.id_izin = '$kode'";
 
     $result=$mysqli->query($query);
     $data=mysqli_fetch_assoc($result);
-    // print_r($data);
-    // echo $data['id_pemesanan'];
+
     $a = "Detail";
 
-// echo $id_pemesanan;
 }
 ?>
 
@@ -75,7 +73,8 @@ if (isset($_GET['id'])){
 	        <label class="col-sm-3 control-label">Bukti Izin</label>
 	        <div class="col-sm-4">
 	        	<td>:</td>
-	          <td><img weidth="220px" height="200px" src="../izin/small_<?php echo $data['gambar']; ?>"></td>
+	          <td>
+	          	<img weidth="220px" height="200px" src="../gambar/izin/small_<?php echo $data['gambar']; ?>"></td>
 	        </div>
 	      </div>
 

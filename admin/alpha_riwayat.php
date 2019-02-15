@@ -13,6 +13,7 @@
                   <th>Nama</th>
                   <th>Tanggal</th>
                   <th>Keterangan</th>
+                  <th>Aksi</th>
                   
                  
                 </tr>
@@ -37,7 +38,7 @@
 
                       <td>
                         <a href="?hal=alpha_detail&id=<?php echo $id_alpha; ?>" class="btn btn-success"><i class="fa fa-edit"></i> Detail</a>
-                        <a href="alpha_proses.php?hapus=<?php echo $id_alpha;?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus [[ <?php echo $nama;?> ]] ??')"><i class="fa fa-trash"></i> Delete</a>
+
                       </td>
                     </tr>
                 <?php }

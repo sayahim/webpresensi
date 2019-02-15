@@ -13,13 +13,16 @@
                   <th>Nama</th>
                   <th>Tanggal</th>
                   <th>Keterangan</th>
+                  <th>aksi</th>
                   
                  
                 </tr>
                 </thead>
                 <tbody>
                 <?php
-                    $date = date('d-m-y');
+                    // $date = date('d-m-y');
+                    date_default_timezone_set('Asia/Jakarta');
+                     $date = date('d-m-y');
 
                     $no=1;
                     $query="SELECT * from alpha join karyawan on alpha.id_karyawan= karyawan.id_karyawan WHERE tanggal = '$date'";
@@ -39,7 +42,7 @@
 <!--                       <td><?php echo $level; ?></td>
  -->                      <td>
                         <a href="?hal=alpha_detail&id=<?php echo $id_alpha; ?>" class="btn btn-success"><i class="fa fa-edit"></i> Detail</a>
-                        <a href="alpha_proses.php?hapus=<?php echo $id_alpha;?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus [[ <?php echo $nama;?> ]] ??')"><i class="fa fa-trash"></i> Delete</a>
+
                       </td>
                     </tr>
                 <?php }

@@ -164,7 +164,7 @@ desired effect
 
         <li <?= ($hal=='laporan')?'class="active"':'' ?>><a href="?hal=laporan"><i class="fa fa-user"></i> <span>Presensi</span></a></li>
         
-        <li <?= ($hal=='alpha')?'class="active"':'' ?>><a href="?hal=alpha"><i class="fa fa-user"></i> <span>Alpa</span></a></li>
+        <li <?= ($hal=='alpha')?'class="active"':'' ?>><a href="?hal=alpha"><i class="fa fa-user"></i> <span>Alpha</span></a></li>
 
         <li <?= ($hal=='izin')?'class="active"':'' ?>><a href="?hal=izin"><i class="fa fa-user"></i> <span>Izin</span></a></li>
 

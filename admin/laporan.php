@@ -12,10 +12,12 @@
                   <th>No</th>
                   <th>Nama</th>
                   <th>Waktu</th>
+                  <th>Tanggal</th>
                   <th>Lokasi</th>
 <!--                   <th>Latitude</th>
                   <th>Longtitude</th> -->
                   <th>Presensi</th>
+                  <th>Aksi</th>
                   
                   
                 </tr>
@@ -34,14 +36,16 @@
                       <td><?php echo $no++ ?></td>
                       <td><?php echo $nama; ?></td>
                       <td><?php echo $waktu; ?></td>
+                      <td><?php echo $tanggal; ?></td>
                       <td><?php echo $lokasi; ?></td>
                       <td><?php echo $jenis_presensi; ?></td>
                       
                       <!-- <td><?php echo $foto; ?></td> -->
 <!--                       <td><?php echo $level; ?></td>
- -->                      <td>
+ -->   
+                    <td>
                         <a href="?hal=laporan_olah&id=<?php echo $id_presensi; ?>" class="btn btn-success"><i class="fa fa-edit"></i> Detail</a>
-                        <a href="laporan_proses.php?hapus=<?php echo $id_presensi;?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus [[ <?php echo $nama;?> ]] ??')"><i class="fa fa-trash"></i> Delete</a>
+                      <!--   <a href="laporan_proses.php?hapus=<?php echo $id_presensi;?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus [[ <?php echo $nama;?> ]] ??')"><i class="fa fa-trash"></i> Delete</a> -->
                       </td>
                     </tr>
                 <?php }

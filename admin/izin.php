@@ -16,6 +16,7 @@
                   <th>Selesai Izin</th>
                   <th>Jenis</th>
                   <th>Keterangan</th>
+                  <th>Aksi</th>
 
                 </tr>
                 </thead>
@@ -48,8 +49,6 @@
                         
                       </i> Detail</a>
                       
-                        <a href="izin_proses.php?hapus=<?php echo $id_izin;?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus [[ <?php echo $id_izin;?> ]] ??')"> Hapus</a>
-
                       </td>
                     </tr>
                 <?php }} ?>
